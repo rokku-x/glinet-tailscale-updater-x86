@@ -64,7 +64,10 @@ preflight_check() {
     else
         log "SUCCESS" "Firmware version: $FIRMWARE_VERSION"
     fi
-    if [ "$ARCH" = "aarch64" ]; then
+    if [ "$ARCH" = "x86_64" ]; then
+        TINY_ARCH="x86_64"
+        log "SUCCESS" "Architecture: x86_64"
+    elif [ "$ARCH" = "aarch64" ]; then
         TINY_ARCH="arm64"
         log "SUCCESS" "Architecture: arm64"
     elif [ "$ARCH" = "armv7l" ]; then
