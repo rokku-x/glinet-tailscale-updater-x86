@@ -7,8 +7,8 @@ env:
   SOFTWARE_NAME: "Tailscale"
   FILE_NAME: "tailscaled"
   REPO: "tailscale/tailscale"
-  REPO_SMALL: "Admonstrator/glinet-tailscale-updater"
-  GIT_AUTHOR_NAME: "Admonstator"
+  REPO_SMALL: "rokku-x/glinet-tailscale-updater"
+  GIT_AUTHOR_NAME: "rokku-x"
 jobs:
   check-versions:
     runs-on: ubuntu-latest
